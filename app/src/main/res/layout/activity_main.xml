@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <Button
+            android:id="@+id/liste_capteurs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/liste_capteurs"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/accelerometre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/accelerometre"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/direction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/direction"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/flash"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/proximite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/proximite"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/position"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

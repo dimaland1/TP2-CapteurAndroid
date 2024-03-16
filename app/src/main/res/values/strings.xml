@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP2-capteurs</string>
+    <string name="liste_capteurs">liste capteurs</string>
+    <string name="accelerometre">Accelerometre</string>
+    <string name="direction">direction</string>
+    <string name="flash">flash</string>
+    <string name="proximite">proximite</string>
+    <string name="position">position\n</string>
+</resources>
