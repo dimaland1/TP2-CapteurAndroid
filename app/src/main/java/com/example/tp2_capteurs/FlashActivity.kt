@@ -75,6 +75,7 @@ class FlashActivity : AppCompatActivity() {
         cameraId = cameraManager?.cameraIdList?.get(0)
 
         val accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+
         sensorManager.registerListener(accelerometerListener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
     }
 

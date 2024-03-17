@@ -10,11 +10,11 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class ProximiteActivity : AppCompatActivity() {
+
     private lateinit var sensorManager: SensorManager
     private var proximitySensor: Sensor? = null
     private val proximitySensorListener = object : SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-            // Do something here if sensor accuracy changes.
         }
 
         override fun onSensorChanged(event: SensorEvent) {

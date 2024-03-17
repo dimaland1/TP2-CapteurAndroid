@@ -60,6 +60,7 @@ class DirectionActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
         sensorManager.registerListener(gravityListener, gravity, SensorManager.SENSOR_DELAY_NORMAL)
     }
 

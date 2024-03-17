@@ -12,10 +12,17 @@ import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 
+/*
+Définir une application qui affiche des couleurs différentes comme fond d’écran en
+fonction des valeurs de l'accéléromètre. Répartir les valeurs en trois catégories : valeurs
+inférieures : vert ; valeurs moyennes : noir ; valeurs supérieures : rouge
+
+ */
 
 class AccelerometreActivity : AppCompatActivity() {
     private lateinit var sensorManager: SensorManager
     private var accelerometer: Sensor? = null
+
     private var accelerometerListener : SensorEventListener = object : SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
         }
@@ -24,18 +31,26 @@ class AccelerometreActivity : AppCompatActivity() {
                 val x = event.values[0]
                 val y = event.values[1]
                 val z = event.values[2]
-                val color = Color.rgb((x*25).toInt(), (y*25).toInt(), (z*25).toInt())
                 val layout = findViewById<LinearLayout>(R.id.accelerometre)
-                layout.setBackgroundColor(color)
+                if (x < -5.0 || y < -5.0 || z < -5.0) {
+                    layout.setBackgroundColor(Color.GREEN)
+                } else if (x > 5.0 || y > 5.0 || z > 5.0) {
+                    layout.setBackgroundColor(Color.RED)
+                } else {
+                    layout.setBackgroundColor(Color.BLACK)
+                }
             }
         }
     }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_accelerometre)
 
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
+
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
     }
