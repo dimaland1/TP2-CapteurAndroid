@@ -49,6 +49,9 @@ class AccelerometreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_accelerometre)
 
+        val layout = findViewById<LinearLayout>(R.id.accelerometre)
+        layout.setBackgroundColor(Color.BLACK)
+
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
 
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
