@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
         >
 
 
@@ -19,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/liste_capteurs"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             />
 
@@ -27,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/accelerometre"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             />
 
@@ -34,6 +38,7 @@
             android:id="@+id/direction"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
             android:text="@string/direction"
             android:layout_weight="1"
             />
@@ -43,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/flash"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             />
 
@@ -51,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/proximite"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             />
 
@@ -59,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/position"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             />
 
